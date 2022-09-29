@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Moq;
 using System.Collections.Generic;
 using Xunit;
+using System;
 
 namespace CinemaVendas.API.Test
 {
@@ -64,6 +65,12 @@ namespace CinemaVendas.API.Test
 
             //Assert
             Assert.Equal("Olá Mundo " + DateTime.Now.Day, result);
+        }
+
+        [HttpGet]
+        public string Ola()
+        {
+            return "Olá Mundo " + DateTime.Now.Day;
         }
     }
 }

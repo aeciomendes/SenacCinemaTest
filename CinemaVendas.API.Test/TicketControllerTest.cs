@@ -55,5 +55,15 @@ namespace CinemaVendas.API.Test
             var tickets = Assert.IsType<List<Ticket>>(okResult.Value);
             Assert.Empty(tickets);
         }
+
+        [Fact]
+        public void Ola_AoSerExecutado_RetornaMensagemEDiaAtual()
+        {
+            //Act
+            var result = _controller.Ola();
+
+            //Assert
+            Assert.Equal("Olá Mundo " + DateTime.Now.Day, result);
+        }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using CinemaVendas.Core.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace CinemaVendas.API.Controllers
 {

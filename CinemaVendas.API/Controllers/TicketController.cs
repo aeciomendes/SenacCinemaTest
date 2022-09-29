@@ -24,5 +24,11 @@ namespace CinemaVendas.API.Controllers
 
             return Ok(result);
         }
+
+        [HttpGet]
+        public string Ola()
+        {
+            return "Olá Mundo " + DateTime.Now.Day;
+        }
     }
 }

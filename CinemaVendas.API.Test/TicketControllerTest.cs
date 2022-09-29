@@ -65,12 +65,6 @@ namespace CinemaVendas.API.Test
 
             //Assert
             Assert.Equal("Olá Mundo " + DateTime.Now.Day, result);
-        }
-
-        [HttpGet]
-        public string Ola()
-        {
-            return "Olá Mundo " + DateTime.Now.Day;
-        }
+        }        
     }
 }
